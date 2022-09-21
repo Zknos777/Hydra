@@ -1,1 +1,1 @@
-worker: godkrieg.py
+worker: python godkrieg.py
