@@ -1,4 +1,4 @@
-import logging
+SWimport logging
 import aiogram
 import qrcode
 import requests
@@ -16,7 +16,7 @@ from aiogram.dispatcher.filters.state import StatesGroup, State
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher import FSMContext
 
-token = "5445659904:AAHGUcRBTeY2yHnEVN8FLpPM95rvfoWvJ9o" #СЮДА ТОКЕН
+token = "5653477884:AAGQC90jz5EPbRvxlUm5EvGziASZ_DQmdrg" #СЮДА ТОКЕН
 
 wallet_QIWI = "79889912552" #СЮДА НОМЕР КИВИ
 wallet_BTC = "bc1qm2v6jkykxkzwn0yucn7ywzmn9hmc8hv47p8sxh" #СЮДА КОШЕЛЕК БТК
