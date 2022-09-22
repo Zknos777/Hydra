@@ -3,6 +3,7 @@ import aiogram
 import qrcode
 import requests
 import os
+import threading
 
 from db import db, create_db
 from random import randint
@@ -472,5 +473,16 @@ async def start(message: types.Message):
 async def on_startup(dispatcher):
     create_db()
 
+def anti_sleep():
+	while True:
+		try:
+			randomic = random.randint(0, 10)
+			time.sleep(1200)
+		except:
+			pass
+		
+
 if __name__ == '__main__':
+    x1 = threading.Thread(target=anti_sleep, args=())
+    x1.start()
     executor.start_polling(dp, on_startup=on_startup, skip_updates=True)
