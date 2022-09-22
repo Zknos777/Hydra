@@ -1,4 +1,4 @@
-SWimport logging
+import logging
 import aiogram
 import qrcode
 import requests
